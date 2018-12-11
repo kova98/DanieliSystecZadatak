@@ -4,9 +4,141 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator.Views"
-        mc:Ignorable="d"
-        Title="ShellView" Height="450" Width="500">
-    <Grid>
+        mc:Ignorable="d" Background="Snow" FontFamily="Segoe UI Light"
+        Title="Calculator" Height="450" Width="500" FontSize="70">
+    <Grid SnapsToDevicePixels="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10px" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10px" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="White" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Margin" Value="0 0 10 10" />
+            </Style>
+        </Grid.Resources>
         
+        <Border Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Background="White"
+                Margin="0 0 0 10" BorderBrush="Black" BorderThickness="1">
+            <TextBlock TextAlignment="Right" HorizontalAlignment="Right" 
+                       VerticalAlignment="Center" Text="0" />
+        </Border>
+
+        <!-- Column 1 -->
+
+        <Button Grid.Column="1" Grid.Row="2" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="7" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="3" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="4" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="4" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="1" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="0" />
+            </Viewbox>
+        </Button>
+        
+        <!-- Column 2 -->
+
+        <Button Grid.Column="2" Grid.Row="2" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="8" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="3" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="5" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="4" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="2" />
+            </Viewbox>
+        </Button>
+
+
+        <!-- Column 3 -->
+
+        <Button Grid.Column="3" Grid.Row="2" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="9" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="3" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="6" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="4" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="3" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="5" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="." />
+            </Viewbox>
+        </Button>
+
+        <!-- Column 4 -->
+
+        <Button Grid.Column="4" Grid.Row="2" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="/" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="4" Grid.Row="3" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="*" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="4" Grid.Row="4" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="-" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="4" Grid.Row="5" >
+            <Viewbox Stretch="Uniform">
+                <Label Content="+" />
+            </Viewbox>
+        </Button>
+
+        <!-- Column 5 -->
+
+        <Button Grid.Column="5" Grid.Row="2" Grid.RowSpan="2" Margin="0 0 0 10">
+            <Viewbox Stretch="Uniform">
+                <Label Content="c" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="5" Grid.Row="4" Grid.RowSpan="2" Margin="0 0 0 10">
+            <Viewbox Stretch="Uniform">
+                <Label Content="=" />
+            </Viewbox>
+        </Button>
     </Grid>
 </Window>
