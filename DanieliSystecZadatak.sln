@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Festivali", "Festivali\Festivali.csproj", "{D8A0E1D4-B238-4D3E-B70E-59C93A1A7751}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{218C972E-D2CE-4E62-AD5A-70F0567AD4AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D8A0E1D4-B238-4D3E-B70E-59C93A1A7751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8A0E1D4-B238-4D3E-B70E-59C93A1A7751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8A0E1D4-B238-4D3E-B70E-59C93A1A7751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218C972E-D2CE-4E62-AD5A-70F0567AD4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218C972E-D2CE-4E62-AD5A-70F0567AD4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218C972E-D2CE-4E62-AD5A-70F0567AD4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218C972E-D2CE-4E62-AD5A-70F0567AD4AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
